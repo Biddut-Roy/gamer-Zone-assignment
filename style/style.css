@@ -79,7 +79,7 @@ header nav {
 
 /* end header  */
 
-/*  start a sign-container */
+/*  start a banner-container */
 .bannar-container {
     display: flex;
     width: 90%;
@@ -90,17 +90,20 @@ header nav {
 
 .bannar-box {
     width: 50%;
+    height:600px ;
     background-image: url("../images/Group\ 14.png");
     background-repeat: no-repeat;
     background-size: cover;
     margin: auto 0;
     padding-left: 20px;
+    
 }
 
 .bannar-box>h2 {
     color: #0B0223;
     font-size: 2.8rem;
     text-transform: uppercase;
+    padding-top: 70px;
     margin-bottom: 0;
 }
 
