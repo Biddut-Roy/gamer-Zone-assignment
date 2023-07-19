@@ -289,7 +289,8 @@ header nav {
 
 .card-img .watch{
     position: absolute;
-    left: 130px;
+    left: 125px;
+    filter: grayscale(5%);
     bottom: 70px;
     opacity: 0;
 }
@@ -298,7 +299,9 @@ header nav {
   opacity: 1;
 }
 .play-btn img:hover{
-    background-color: rgba(0, 0, 0, .3);
+    filter: grayscale(70%);
+    border: 5px solid #f40581;
+    border-radius: 20px;
 }
 
 .card>p {
@@ -567,6 +570,12 @@ footer {
         width: 80%;
         margin: 0 auto;
     }
+    .card-img .watch{
+        left: 100px;
+    }
+    .watch div {
+        margin-left: 0px;
+    }
 
     .card-img img {
         width: 100%;
@@ -722,5 +731,9 @@ footer {
     .footer-item{
         width: 90%;
         justify-content: space-around;
+    }
+    .card-img .watch{
+        left: 40px;
+        bottom: 50px;
     }
 }
