@@ -11,7 +11,6 @@ header nav {
     width: 90%;
     align-items: center;
     margin: 0 auto;
-    height: 70px;
 }
 
 .logo-box {
@@ -90,13 +89,13 @@ header nav {
 
 .bannar-box {
     width: 50%;
-    height:600px ;
+    height: 600px;
     background-image: url("../images/Group\ 14.png");
     background-repeat: no-repeat;
     background-size: cover;
     margin: auto 0;
     padding-left: 20px;
-    
+
 }
 
 .bannar-box>h2 {
@@ -288,14 +287,14 @@ header nav {
 .game-info-container {
     display: flex;
     width: 90%;
-    height: 450px;
+    height: 650px;
     justify-content: space-evenly;
     margin: 40px auto;
 
 }
 
 .game-info {
-    width: 50%;
+    width: 40%;
     text-align: right;
 }
 
@@ -305,7 +304,8 @@ header nav {
     line-height: 40px;
     width: 60%;
     margin: 0 auto;
-    padding-top: 100px;
+    padding-top: 200px;
+
 }
 
 #play {
@@ -326,7 +326,7 @@ header nav {
 
 .game-pic {
     width: 50%;
-    height: 400px;
+    height: 600px;
 }
 
 .game-pic img {
@@ -338,29 +338,25 @@ header nav {
     position: relative;
     width: 25%;
     right: 50px;
-    bottom: 100px;
+    bottom: 150px;
 }
 
 /*  end  of a game info  */
 
 
-/* starta a game botton secton
+/* start a game button section
  */
+
+
 .game-button {
     width: 90%;
-    margin: 40px auto;
-    background-color: rgb(245, 238, 229);
-    border: 2px solid gold;
-    margin-top: 70px;
-}
 
-.game-button-1 {
-    width: 100%;
+    margin: 40px auto;
     justify-content: space-evenly;
     margin: 20px auto;
     display: grid;
     gap: 10px;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(5, 1fr);
     background-color: rgb(245, 238, 229);
 }
 
@@ -368,6 +364,15 @@ header nav {
     display: flex;
     align-items: center;
     border: none;
+    padding-left: 40px;
+    margin: 10px;
+}
+
+.game-button .down {
+    position: relative;
+    align-items: center;
+    border: none;
+    left: 130px;
 }
 
 .gm-btn:hover {
@@ -381,41 +386,8 @@ header nav {
     width: 30%;
     padding: 5px;
 }
-
-.game-button-2 {
-    width: 90%;
-    justify-content: space-evenly;
-    display: grid;
-    margin: 0 auto;
-    gap: 10px;
-    grid-template-columns: 0.8fr 0.8fr 0.8fr 0.8fr;
-    background-color: rgb(245, 238, 229);
-}
-
-.gm-btn-2 {
-
-    display: flex;
-    align-items: center;
-    border: none;
-    padding-left: 20px;
-}
-
-.gm-btn-2:hover {
-    border-radius: 50px;
-    background: #FFF;
-    color: #F948B2;
-    border: 1px solid #F948B2;
-}
-
-.gm-btn-2 img {
-    width: 25%;
-    padding: 5px;
-}
-
-/* compleat a main section */
-
-
-/*  footer may aya */
+/* ens a main */
+/* start footer */
 footer {
     background: #0B0223;
     height: 400px;
@@ -423,7 +395,6 @@ footer {
     text-align: center;
     padding-top: 30px;
     margin-top: 50px;
-    border: 2px solid red;
 }
 
 .footer-logo {
@@ -482,9 +453,245 @@ footer {
     color: rgba(255, 255, 255, 0.60);
     font-weight: 500;
 }
-.footer-title > p{
-    
+
+.footer-title>p {
+
     color: rgba(255, 255, 255, 0.60);
     font-weight: 500;
 }
+
 /* footer end */
+
+.hide {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* responsive layout  */
+/* mobile screen */
+@media screen and (max-width: 576px) {
+
+    header nav,
+    .menu-box,
+    .bannar-container,
+    .bannar-pic-box,
+    .team-container,
+    .game-info-container {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    nav .logo-box {
+        margin-left: 0;
+        height: 40px;
+    }
+
+    .bannar-container {
+        flex-direction: column-reverse;
+    }
+
+    .menu-1 ul {
+        padding: 0;
+    }
+
+    .bannar-box {
+        width: 100%;
+        height: 400px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .bannar-box h2 {
+        margin-top: 0;
+        padding-top: 10px;
+    }
+
+    .bannar-box h1 {
+        font-size: 4rem;
+    }
+
+    .team-img {
+        width: 100%
+    }
+
+    .team-info {
+        width: 100%;
+        text-align: center;
+    }
+
+    .card-box {
+        display: inline;
+
+    }
+
+    .card {
+        text-align: center;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .card-img img {
+        width: 100%;
+    }
+
+    .game-info,
+    .game-pic {
+        width: 100%;
+        text-align: center;
+    }
+
+    .game-info h1 {
+        padding-top: 0;
+        width: 80%;
+    }
+
+    .game-pic img {
+        width: 80%;
+    }
+
+    .game-pic div {
+        right: 10px;
+        bottom: 65px;
+    }
+
+    .game-info-container {
+        width: 90%;
+    }
+
+    .game-button {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .gm-btn {
+        padding: 0;
+    }
+
+    .game-button .down {
+        position: relative;
+        left: 0;
+    }
+
+    .gm-btn p {
+        color: #0B0223;
+        font-size: 8px;
+        font-weight: 600;
+    }
+    footer{
+        padding-top: 0;
+    }
+    .footer-menu {
+        width: 100%;
+        justify-content: space-evenly;
+    }
+    .footer-menu a {
+        font-size: 8px;
+        font-weight: 600;
+    }
+    .footer-icon{
+        width: 70%;
+    }
+    .footer-item{
+        width: 100%;
+    }
+    .footer-title{
+        margin-top: 40px;
+    }
+}
+
+
+
+
+
+/* responsive tablet */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .menu-1 ul {
+        padding: 0;
+    }
+
+    .menu-1 ul a {
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+    .bannar-box {
+        padding-left: 0;
+        height: 400px;
+    }
+
+    .bannar-box h2 {
+        font-size: 2rem
+    }
+
+    .bannar-box h1 {
+        font-size: 4.3rem;
+    }
+
+    .team-container {
+        width: 90%;
+    }
+
+    .team-img {
+        width: 50%;
+        margin: auto 0;
+    }
+
+    .team-img img {
+        width: 100%;
+    }
+
+    .team-info {
+        width: 50%;
+        text-align: center;
+    }
+
+    .game-info {
+        text-align: center;
+    }
+
+    .game-info>h1 {
+        width: 100%;
+    }
+
+    .game-info>p {
+        width: 100%;
+        margin: 0;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .game-pic div {
+        right: 25px;
+        bottom: 70px;
+    }
+    .game-button {
+        width: 100%;
+        padding: 20px 0;
+    }
+    .gm-btn{
+        padding-left: 0;
+        margin: 0;
+    }
+    .gm-btn img {
+        width: 80%;
+    }
+    .game-button .down {
+        position: relative;
+        align-items: center;
+        border: none;
+        left: 60px;
+    }
+    .footer-item{
+        width: 90%;
+        justify-content: space-around;
+    }
+}
